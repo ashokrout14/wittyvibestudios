@@ -128,7 +128,7 @@ footer {
 }
 
 #mascot img {
-  width: 80px;
+  width: 100px;
   animation: bounce 1.5s infinite;
 }
 
@@ -204,4 +204,32 @@ img, video {
   max-width: 100%;
   height: auto;
   display: block;
+}
+.vibey-section {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.vibey-img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.vibey-text h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: tomato;
+}
+
+.vibey-text p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.quote {
+  font-style: italic;
+  color: #ff6347;
 }
