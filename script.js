@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
   });
 
   if (Math.random() < 0.01) { // 1% chance per scroll to show joke
-    showJoke();
+   // showJoke();
   }
 });
 
