@@ -233,3 +233,56 @@ img, video {
   font-style: italic;
   color: #ff6347;
 }
+/* Loader Styles */
+#loader {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #ff5e57;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-size: 1.5rem;
+  text-align: center;
+  animation: fadeOut 1s forwards 2.5s; /* Adjust as needed */
+}
+
+.loader-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.spin-logo {
+  width: 80px;
+  height: auto;
+  animation: spin 2s linear infinite;
+}
+
+.bounce-vibey {
+  width: 80px;
+  height: auto;
+  animation: bounce 1.5s infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Existing bounce from mascot */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
