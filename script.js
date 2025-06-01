@@ -49,3 +49,13 @@ setInterval(() => {
     title.classList.remove('fade-out'); // fade back in
   }, 500); // fade out duration in ms
 }, 4000); // change joke every 4 seconds
+
+// Mascot click interaction
+document.getElementById('mascot').addEventListener('click', () => {
+  const mascot = document.getElementById('mascot');
+  mascot.classList.add('clicked');
+
+  setTimeout(() => {
+    mascot.classList.remove('clicked');
+  }, 500);
+});
